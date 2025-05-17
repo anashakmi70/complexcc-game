@@ -1,0 +1,142 @@
+.counter-page {
+  max-width: 1100px;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.players-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.player-card {
+  background-color: #262626;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 12px;
+  background-color: #333;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.controls span {
+  flex: 1;
+  text-align: center;
+  color: #ccc;
+  .counter-page {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .players-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem auto;
+  }
+  
+  .player-card {
+    background: #1f1f1f;
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1 1 40%;
+    max-width: 45%;
+    min-width: 250px;
+  }
+  
+  .name-input {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    background: #333;
+    border: none;
+    padding: 0.5rem;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  .controls button {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .score-display {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: #2c2c2c;
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .modal-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .modal-actions button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .modal-actions .cancel {
+    background: #ef4444;
+    color: white;
+  }
+  
+  .modal-actions button:not(.cancel) {
+    background: #3b82f6;
+    color: white;
+  }
+}
